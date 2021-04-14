@@ -24,7 +24,7 @@
 <!--	<link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
 <!--	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}> -->
 		<link rel="dns-prefetch" href="//www.google-analytics.com">
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin> -->
+		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	{{- end }}
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
