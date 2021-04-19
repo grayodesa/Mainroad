@@ -69,7 +69,7 @@
 	  host: "https://remark.blognot.co", 
 	  site_id: 'remark',
 	  components: ['embed', 'last-comments', 'counter'], 
-	  url: '{{ substr .RelPermalink 1 5 }}', 
+	  url: {{ printf "%s%s" "https://blognot.co" .RelPermalink }}, 
 	  locale: 'ru',
 	  show_email_subscription: false 
 	};
