@@ -30,14 +30,7 @@
 {{ partial "pager.html" . }}
 <section class="section">
     <div class="container max-800px">
-        <div id="replybox"></div>
+        <div id="remark42"></div>
     </div>
 </section>
-<script>
-    window.replybox = {
-        site: 'Gl7YlD3YXK', 
-		identifier: '{{ substr .RelPermalink 1 5 }}'
-    };
-</script>
-<script src="https://cdn.getreplybox.com/js/embed.js"></script>
 {{ end }}
