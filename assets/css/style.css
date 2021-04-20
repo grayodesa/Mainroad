@@ -1314,3 +1314,26 @@ textarea {
 		font-size: .6875rem;
 	}
 }
+.remark42__last-comments .comment_view_preview.comment_theme_light .comment__info {
+	color: #526f9a;
+}
+
+.remark42__last-comments .comment {
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+	line-height: 1.2em;
+	margin-top: 0.5em;
+}
+
+.remark42__last-comments .comment_view_preview .comment__username,
+.remark42__last-comments .comment_view_preview .comment__title-link {
+	color: #526f9a;
+	text-decoration: none;
+}
+
+.remark42__last-comments .comment_view_preview .comment__title,
+.remark42__last-comments .comment_view_preview.comment_theme_dark .comment__title,
+.remark42__last-comments .comment_view_preview.comment_theme_light .comment__title {
+	padding-bottom: 3px;
+	font-size: 1em;
+}
