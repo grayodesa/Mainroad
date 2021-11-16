@@ -23,11 +23,14 @@
 <!--	<link rel="dns-prefetch" href="//fonts.googleapis.com"> -->
 <!--	<link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
 <!--	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}> -->
-		<link rel="dns-prefetch" href="//www.google-analytics.com">
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<!--		<link rel="dns-prefetch" href="//www.google-analytics.com"> -->
+<!--		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin> -->
 		<link rel="preload" href="https://remark.blognot.co/web/last-comments.css" as="style">
 	{{- end }}
 
+	{{ if .Site.Params.GoogleAnalyticsID }}
+	{{ partial "analytics-gtag.html" . }}
+	{{ end }}
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	{{ range .Site.Params.customCSS -}}
