@@ -16,7 +16,7 @@
 	{{- if .Site.Params.twitter_cards }}
 		{{ template "_internal/twitter_cards.html" . }}
 	{{- end }}
-	{{ if .Site.Params.googleAnalyticsID }}
+	{{ if .Site.Params.GoogleAnalyticsID }}
 	{{ partialCached "analytics-gtag.html" . }}
 	{{ end }}
 
