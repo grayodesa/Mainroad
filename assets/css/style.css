@@ -252,6 +252,9 @@ figcaption {
 	margin-top: 4px;
 	margin-top: .25rem;
 	color: #666;
+	font-style: italic;
+	text-align: center;
+	font-size: smaller;
 }
 
 figcaption h4 {
