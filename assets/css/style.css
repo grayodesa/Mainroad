@@ -310,7 +310,7 @@ blockquote {
 	padding: 5px 0 5px 15px;
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
-	line-height: 1.6;
+	line-height: 1;
 	border-left: 5px solid {{ $highlightColor }};
 }
 
