@@ -307,11 +307,11 @@ kbd {
 
 blockquote {
 	display: block;
-	padding: 5px 0 5px 15px;
-	margin: 0 0 20px;
+	padding: 5px 0 5px 5px;
+	margin: 0 0 0px;
 	margin: 0 0 1.25rem;
-	line-height: 1;
-	border-left: 5px solid {{ $highlightColor }};
+	line-height: 1.2;
+	border-left: 2px solid {{ $highlightColor }};
 }
 
 blockquote p:last-child {
