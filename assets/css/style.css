@@ -1426,3 +1426,9 @@ textarea {
     vertical-align: top;
     width: auto;
 }
+
+.youtube-container {
+    padding-bottom: 15px;
+	margin: 0px;
+	
+}
