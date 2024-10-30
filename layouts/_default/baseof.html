@@ -22,21 +22,17 @@
 
 	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
 	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
-<!--	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<!--	<link rel="dns-prefetch" href="//fonts.googleapis.com"> -->
-<!--	<link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
-<!--	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}> -->
 
 	{{- end }}
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
 	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	<link rel="preload" href="https://remark.blognot.co/web/last-comments.css" as="style">
 	<link rel="stylesheet" href="/lite-youtube-embed/src/lite-yt-embed.css">
-	<script src="/lite-youtube-embed/src/lite-yt-embed.js" defer></script>
+	<script src="/lite-youtube-embed/src/lite-yt-embed.js" async></script>
 
 
 
-{{ $style := resources.Get "css/style.css" | resources.Minify | resources.ExecuteAsTemplate "css/styles.pure.css" . -}}
+{{ $style := resources.Get "css/style.css" | resources.Minify | resources.ExecuteAsTemplate "css/styles.pure.css" . }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	{{ range .Site.Params.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">
