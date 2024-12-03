@@ -29,7 +29,9 @@
 	<link rel="preload" href="https://remark.blognot.co/web/last-comments.css" as="style">
 	<link rel="stylesheet" href="/lite-youtube-embed/src/lite-yt-embed.css">
 	<script src="/lite-youtube-embed/src/lite-yt-embed.js" async></script>
-
+	<link rel="stylesheet" href="/css/swipebox.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/js/swipebox.js"></script>
 
 
 {{ $style := resources.Get "css/style.css" | resources.Minify | resources.ExecuteAsTemplate "css/styles.pure.css" . }}
